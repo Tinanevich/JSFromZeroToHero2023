@@ -10,15 +10,18 @@
 <body>
     <div class="main">
         <div class="header"></div>
-            <div class='container'>
-                <div class="subcontainer">
-                <h1 class="title">Kristina Anevich</h1>
-                <p class="subtitle">Junior front&ndash;end developer</p></div>
-            <div class="avatar">
-                <img src="./img/Photo.png" alt="CandidateForVacancy">
-            </div>
-            <div class="plug"></div>
+        <div class="avatar-adaptiv">
+            <img class="avatar-img-adaptive" src="./img/Photo.png" alt="CandidateForVacancy">
         </div>
+            <div class="block-contacts">
+                <div class="subcontacts">
+                    <h1 class="title">Kristina Anevich</h1>
+                    <p class="subtitle">Junior front&ndash;end developer</p>
+                </div>
+                <div class="avatar">
+                    <img class="avatar-img" src="./img/Photo.png" alt="CandidateForVacancy">
+                </div>
+            </div>
         <div class="icons">
             <div class="icon"><img src="./icon/home.png" alt="location"><p>Minsk</p></div>
             <div class="icon"><img src="./icon/phone.png" alt="phone"><a href="tel:+375336005475" target="_blank">+375(33)&minus;600&minus;54&minus;75</a></div>
@@ -29,61 +32,62 @@
         </div>
         <div class="block">
             <h2>Summary</h2>
-            <p>I am a front&ndash;end developer. I have basic knowledge of JavaScript, CSS, HTML. Ready to implement solutions that are user responsive and efficient.
+            <p class="text">I am a front&ndash;end developer with 1 year of experience. I have knowledge of React, JavaScript, CSS, HTML. Ready to implement solutions that are user responsive and efficient.
                 Thanks to communication skills great problem&ndash;solving skills and work well in a team I am ready to deliver great results.
                 So curious about new technologies and I am driven to find ways to implement them in my work.</p>
         </div>
         <div class="block">
-            <div class="block-lan">
             <h2>Languages</h2>
+            <div class="block-lan">
                 <ul type="disc">
                     <li>English &mdash; Pre&ndash;Intermediate</li>
                     <li>Russian &mdash; Native</li>
                 </ul>
-                </div>
+            </div>
         </div>
         <div class="block">
             <h2>Skills</h2>
-            <div class="block-skills">
-            <div class="block-one">
-                <ul type="disc">
-                    <li>JavaScript</li>
-                    <li>CSS (SCSS)</li>
-                    <li>HTML</li>
-                    <li>Git</li>
-                    <li>Adaptive layout</li>
-                </ul>
-            </div>
-            <div class="block-two">
-                <ul type="disc">
-                    <li>Visual studio code</li>
-                    <li>Figma</li>
-                    <li>Webpack</li>
-                    <li>OOP</li>
-                    <li>MVC</li>
-                </ul>
-            </div>
-            <div class="block-three">
-                <ul type="disc">
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>SVG</li>
-                    <li>Notion</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-            </div>
+                <div class="block-skills">
+                    <div class="block-one">
+                        <ul type="disc">
+                            <li>JavaScript</li>
+                            <li>CSS (SCSS)</li>
+                            <li>HTML</li>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                    <div class="block-two">
+                        <ul type="disc">
+                            <li>Adaptive layout</li>
+                            <li>Git, GitHub, GitLab</li>
+                            <li>Visual studio code</li>
+                            <li>Figma</li>
+                            <li>Webpack</li>
+                            <li>OOP</li>
+                        </ul>
+                    </div>
+                    <div class="block-three">
+                        <ul type="disc">
+                            <li>Jira, confluence</li>
+                            <li>Notion</li>
+                            <li>Docker</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="block">
                 <h2>Education</h2>
                 <p class="subcontent">IT Academy <span>I</span> Front&ndash;end developer &mdash; <a href="https://yadi.sk/i/_nPQ5e1U48JGlw" target="_blank">certificate</a></p>
                 <p class="date">april 2022 &ndash; july 2022</p>
-                <p>Developed a website for the provision of cosmetic services using layout HTML&frasl;CSS and JavaScript. Created a form for user input in
+                <p class="text">Developed a website for the provision of cosmetic services using layout HTML&frasl;CSS and JavaScript. Created a form for user input in
                     JavaScript. Included Bootstrap styles. Implemented block rubber layout and adaptive layout. Implemented animation for social media
                     icons. This project can be seen on my <a href="https://github.com/Tinanevich" target="_blank">GitHub</a></p>
                 <p class="subcontent">IT Academy <span>I</span> Python developer &mdash; <a href="https://yadi.sk/i/ddyhI2coIos-ig" target="_blank">certificate</a></p>
                 <p class="date">january 2022 &ndash; april 2022</p>
-                <p>Developed a web application (online registration for cosmetic services) using HTML&frasl;CSS layout, SQLite database, Python/Django framework.
+                <p class="text">Developed a web application (online registration for cosmetic services) using HTML&frasl;CSS layout, SQLite database, Python/Django framework.
                     Created two forms for user input, the data of which is sent to the server. Used a SQLite database. I used Bootstrap styles in the project.
                     This project can be seen on my <a href="https://github.com/Tinanevich" target="_blank">GitHub</a></p>
                 <p class="subcontent">Belarusian State Technological University  <span>I</span> Economist&ndash;manager</p>
@@ -91,11 +95,22 @@
             </div>
             <div class="block">
                 <h2>Experience</h2>
-                <p class="subcontent">Freelance, Almaty <span>I</span> Junior Front&ndash;end developer</p>
-                <p class="date"> october 2022 &ndash; present</p>
-                <p>Participation in a charity project to create a pet&ndash;shelter site for homeless animals as a Junior Frontend developer.</p>
+                <p class="subcontent">IT Bootcamp, Minsk <span>I</span> Junior Front&ndash;end developer</p>
+                <p class="date"> february 2024  &ndash; june 2024</p>
+                <p class="text">Participation in the implementation of the functionality of the personal account of the parent of the children&prime;s academy.</p>
                 <div class="block_one">
-                    <ul type="disc">
+                    <ul class="disc" type="disc">
+                        <li>Building components using React, TypeScript;</li>
+                        <li>Work with GitLab</li>
+                        <li>Interaction with the team in Jira, confluence</li>
+                    </ul>
+                </div>
+                <p class="subcontent">Help Pet, Almaty <span>I</span> Junior Front&ndash;end developer</p>
+                <p class="date"> october 2022 &ndash; august 2023</p>
+                <p><a href="https://pet-shelter.netlify.app/" target="_blank">HelpPet</a></p>
+                <p class="text">Participation in a charity project to create a pet&ndash;shelter site for homeless animals as a Junior Frontend developer.</p>
+                <div class="block_one">
+                    <ul class="disc" type="disc">
                         <li>Interaction with the team in Notion</li>
                         <li>Adaptive layout of HTML pages by Figma layout</li>
                         <li>Connecting SCSS styles</li>
@@ -104,10 +119,10 @@
                         <li>Working with components JS function</li>
                     </ul>
                 </div>
-                <p class="subcontent">CG Belrusinvest LLC Vit&ndash;M, Volvo official dealer, truck service station<span>I</span> Economist</p>
+                <p class="subcontent">CG Belrusinvest LLC Vit&ndash;M, Volvo official dealer, truck service station <span>I</span> Economist</p>
                 <p class="date"> december 2016 &ndash; december 2021</p>
                 <div class="block_one">
-                    <ul type="disc">
+                    <ul class="disc" type="disc">
                         <li>Accompanied the program 1C (Alpha&ndash;auto, Accounting)</li>
                         <li>Made payments in Belarusian rubles and foreign currency in the Internet bank</li>
                         <li>Created payment registers</li>
@@ -117,7 +132,7 @@
                 </div>
                 <div class="block_one">
                     <h3>Achievement:</h3>
-                    <ul type="disc">
+                    <ul class="disc" type="disc">
                         <li>Contributed to the launch of the program 1C &mdash; Financial Accounting</li>
                         <li>Got ahead in the career from Assistant Director to Economist</li>
                         <li>Optimized work with documents</li>
@@ -128,7 +143,7 @@
             <div class="block">
                 <h2>Additional information</h2>
                 <div class="block_one">
-                    <ul type="disc">
+                    <ul class="disc" type="disc">
                         <li>I attend various IT&ndash;meetings</li>
                         <li>English in a progress</li>
                         <li>I study on the online learning platform Udemy (React)</li>
