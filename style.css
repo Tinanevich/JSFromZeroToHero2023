@@ -80,27 +80,56 @@
 }
 
 .block {
-    margin: 5px 35px 5px 60px;
+    margin: 0px 35px 0px 60px;
+}
+
+.block .box {
+    padding: 10px;
+    background-color: #8e538e;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.box::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box.active::after {
+    content: "-";
 }
 
 .text {
+    margin: 0;
     text-align: justify;
 }
 
-.block h2 {
-    border-bottom-style: solid;
+.disk ul {
+    margin: 0;
+    padding: 0;
 }
-
 .block-skills {
     display: flex;
     margin-right: 80px;
     justify-content: space-between;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .block-lan {
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .block-about {
@@ -116,7 +145,7 @@
 }
 
 .block-one ul {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .slidemain {
@@ -272,14 +301,12 @@
         flex-direction: column;
     }
 
-    .block-skills ul, .block-one ul, .block-lan ul {
-       padding-left: 0px;
-       margin: 0;
+    .block-skills ul {
+        margin: 0;
     }
 
-    .disc {
-        padding: 10px;
-        margin: 0;
+    .block-skills ul, .block-one ul, .block-lan ul {
+       padding-left: 10px;
     }
 
     .date {
